@@ -14,8 +14,8 @@ function setHiddenFields() {
     answer.value.toString();
 
     for (let i = 4; answer.value.length < i; i--) {
-        zero  += "0";
+        amountZero  += "0";
 
     }
-    return (zero + answer.value);
+    return (amountZero + answer.value);
 }
