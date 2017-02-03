@@ -17,5 +17,5 @@ function setHiddenFields() {
         amountZero  += "0";
 
     }
-    return (amountZero + answer.value);
+    answer.value = amountZero + answer.value;
 }
