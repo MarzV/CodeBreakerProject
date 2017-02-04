@@ -17,13 +17,13 @@ function guess() {
 
 //implement new functions here
 
-// function getResults() {
-//     if(!validateInput(input.value)) {
-//         return false
-//     }
-//
-//     attempt.value++
-// }
+function getResults() {
+    if (!validateInput(input.value)) {
+        return false;
+    }
+
+    attempt.value++
+}
 
 function setHiddenFields() {
     let amountZero = "";
@@ -41,8 +41,8 @@ function setMessage(message) {
     document.getElementById('message').innerHTML = message
 }
 
-function validateInput(input) {
-    if(input.length == 4) {
+function validateInput(userInput) {
+    if(userInput.length == 4) {
         return true
     }
     else {
