@@ -12,7 +12,7 @@ function guess() {
         return;
     }
 
-    attempt.value++
+    attempt.value++;
 }
 
 //implement new functions here
@@ -22,17 +22,20 @@ function getResults() {
         return false;
     }
 
-    attempt.value++
+    attempt.value++;
 }
 
 function setHiddenFields() {
     let amountZero = "";
-    attempt.value= "";
+
     answer.value= Math.floor((Math.random()*9999)).toString();
 
     for (let i = 4; answer.value.length < i; i--) {
         amountZero  += "0";
     }
+
+    attempt.value= "0";
+
 
     answer.value = amountZero + answer.value;
 }
@@ -42,11 +45,9 @@ function setMessage(message) {
 }
 
 function validateInput(userInput) {
-    if(userInput.length == 4) {
-        return true
-    }
-    else {
+    if(userInput.length != 4) {
         setMessage("Guesses must be exactly 4 characters long.");
-        return false
+        return false;
     }
+    return true;
 }
