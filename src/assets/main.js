@@ -17,12 +17,22 @@ function guess() {
 
 //implement new functions here
 
-function getResults() {
-    if (!validateInput(input.value)) {
-        return false;
-    }
+function getResults(input) {
 
-    attempt.value++;
+    let htmlToAdd = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
+
+    for (let a = 0; a <= 4; a++) {
+        if (input[a] == answer.value[a]) {
+            htmlToAdd += '<span class="glyphicon glyphicon-ok"></span>';
+        }
+        for (let b= 0; b <= 4; b++) {
+            if(input[b] == answer.value[a]) {
+                htmlToAdd += '<span class="glyphicon glyphicon-transfer"></span>';
+            }
+            else htmlToAdd += '<span class="glyphicon glyphicon-remove"></span>';
+        }
+        htmlToAdd += '</div';
+    }
 }
 
 function setHiddenFields() {
