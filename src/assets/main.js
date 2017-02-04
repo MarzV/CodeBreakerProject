@@ -19,8 +19,7 @@ function guess() {
 function setHiddenFields() {
     let amountZero = "";
     attempt.value= "";
-    answer.value= Math.floor((Math.random()*9999));
-    answer.value.toString();
+    answer.value= Math.floor((Math.random()*9999)).toString();
 
     for (let i = 4; answer.value.length < i; i--) {
         amountZero  += "0";
