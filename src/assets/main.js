@@ -17,13 +17,13 @@ function guess() {
 
 //implement new functions here
 
-function getResults() {
-    if(!validateInput(input.value)) {
-        return false
-    }
-
-    attempt.value++
-}
+// function getResults() {
+//     if(!validateInput(input.value)) {
+//         return false
+//     }
+//
+//     attempt.value++
+// }
 
 function setHiddenFields() {
     let amountZero = "";
