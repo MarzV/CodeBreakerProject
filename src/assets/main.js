@@ -114,7 +114,7 @@ function showAnswer(winOrLose) {
     let codeHtml = document.getElementById('code');
     codeHtml.innerHTML = answer.value;
     if(winOrLose) {
-        codeHtml.className += ' succes'
+        codeHtml.className += ' success'
     }
     if (!winOrLose) {
         codeHtml.className += ' failure'
