@@ -109,3 +109,13 @@ function validateInput(userInput) {
     }
     return true;
 }
+
+function showAnswer(winOrLose) {
+    let codeHtml = document.getElementById('code');
+    codeHtml.innerHTML = answer.value;
+    if(winOrLose) {
+        codeHtml.className += ' succes'
+    }
+    else  codeHtml.className += ' failure'
+
+}
