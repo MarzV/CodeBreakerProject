@@ -116,6 +116,8 @@ function showAnswer(winOrLose) {
     if(winOrLose) {
         codeHtml.className += ' succes'
     }
-    else  codeHtml.className += ' failure'
+    if (!winOrLose) {
+        codeHtml.className += ' failure'
+    }
 
 }

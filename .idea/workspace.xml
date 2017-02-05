@@ -25,8 +25,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="646">
-                  <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+                <state relative-caret-position="425">
+                  <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -39,8 +39,8 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/assets/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="820">
-                  <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+                <state relative-caret-position="856">
+                  <caret line="122" column="1" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -228,12 +228,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1486119045366</updated>
-      <workItem from="1486119047627" duration="26582000" />
+      <workItem from="1486119047627" duration="26679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26582000" />
+    <option name="totallyTimeSpent" value="26679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -287,18 +287,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
+    <entry file="file://$PROJECT_DIR$/src/assets/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+        <state relative-caret-position="856">
+          <caret line="122" column="1" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/main.js">
+    <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+        <state relative-caret-position="425">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
           <folding />
         </state>
       </provider>
