@@ -18,22 +18,54 @@ function guess() {
 //implement new functions here
 
 function getResults(input) {
-    input.toString();
+    let inputAnswer = input.toString();
     let htmlToAdd = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
 
-    for (let a = 0; a <= 4; a++) {
-        if (input[a] == answer.value[a]) {
+
+    for (let a = 0; a < 4; a++) {
+        alert(inputAnswer[a] + 'inputAnswer');
+        alert(answer.value[a] + 'answerValue');
+        if (inputAnswer[a] == answer.value[a]) {
+            alert ('deze staat op de goede plek en is gelijk');
             htmlToAdd += '<span class="glyphicon glyphicon-ok"></span>';
+
         }
-        for (let b= 0; b <= 4; b++) {
-            if(input[b] == answer.value[a]) {
-                htmlToAdd += '<span class="glyphicon glyphicon-transfer"></span>';
+        else if  (inputAnswer[a] != answer.value[a]) {
+            for (let b = 0; b < 4; b++) {
+                if(inputAnswer[a] == answer.value[b]) {
+                    alert('deze is er wel maar niet op de juiste plek');
+                    htmlToAdd += '<span class="glyphicon glyphicon-transfer"></span>';
+                    break;
+                }
+                else if (b==3) {
+                    alert('getal komt niet voor');
+                    htmlToAdd += '<span class="glyphicon glyphicon-remove"></span>';
+                }
             }
-            else htmlToAdd += '<span class="glyphicon glyphicon-remove"></span>';
         }
-        htmlToAdd += '</div';
     }
+    htmlToAdd += '</div';
+    alert(htmlToAdd);
 }
+
+
+
+
+        // if (inputAnswer[a] == answer.value[a]) {
+        //     // htmlToAdd += '<span class="glyphicon glyphicon-ok"></span>';
+        //
+        // }
+// //         for (let b= 0; b <= 4; b++) {
+// //             if(input[b] == answer.value[a]) {
+// //                 alert(input[b] + answer.value[a] +'niet op de goede pek, juiste getal')
+// //                 // htmlToAdd += '<span class="glyphicon glyphicon-transfer"></span>';
+// //             }
+// //             // else htmlToAdd += '<span class="glyphicon glyphicon-remove"></span>';
+// //             alert('niet op de goede pek, niet juiste getal')
+// //         }
+// //         //
+// //     }
+// }
 
 function setHiddenFields() {
     let amountZero = "";
