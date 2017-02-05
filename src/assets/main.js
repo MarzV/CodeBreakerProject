@@ -13,19 +13,25 @@ function guess() {
     }
 
     attempt.value++;
-    if (getResults(input.value)) {
+
+    let results = getResults(input.value)
+
+    if (results) {
         setMessage('You Win! :)');
-        showAnswer('true');
+        showAnswer(true);
         showReplay();
     }
-    if(getResults(input.value) == false && attempt.value >= 10) {
+
+    if (!results && attempt.value >= 10) {
         setMessage('You Lose! :(');
-        showAnswer('false');
+        showAnswer(true);
         showReplay();
     }
 
-    else  setMessage('Incorrect, try again.')
+    if (!results && attempt.value < 10) {
 
+    setMessage('Incorrect, try again.')
+    }
 
 }
 
@@ -67,7 +73,8 @@ function getResults(input) {
     if (correctQuess == 4 ) {
         return true
     }
-    else return false
+    if (correctQuess < 4) {
+        return false }
 }
 
 
@@ -117,6 +124,7 @@ function validateInput(userInput) {
 }
 
 function showAnswer(winOrLose) {
+    alert('in de showAsnwer functie');
     let codeHtml = document.getElementById('code');
     codeHtml.innerHTML = answer.value;
     if(winOrLose) {
