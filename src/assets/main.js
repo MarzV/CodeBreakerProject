@@ -20,7 +20,7 @@ function guess() {
 function getResults(input) {
     let inputAnswer = input.toString();
     let htmlToAdd = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
-
+    let correctQuess = 0;
 
     for (let a = 0; a < 4; a++) {
         alert(inputAnswer[a] + 'inputAnswer');
@@ -28,6 +28,8 @@ function getResults(input) {
         if (inputAnswer[a] == answer.value[a]) {
             alert ('deze staat op de goede plek en is gelijk');
             htmlToAdd += '<span class="glyphicon glyphicon-ok"></span>';
+            correctQuess++;
+
 
         }
         else if  (inputAnswer[a] != answer.value[a]) {
@@ -46,7 +48,12 @@ function getResults(input) {
     }
     htmlToAdd += '</div';
     alert(htmlToAdd);
+    alert(correctQuess);
     document.getElementById('results').innerHTML= htmlToAdd;
+    if (correctQuess == 4 ) {
+        return true
+    }
+    else return false
 }
 
 
