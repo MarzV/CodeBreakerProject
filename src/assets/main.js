@@ -46,6 +46,7 @@ function getResults(input) {
     }
     htmlToAdd += '</div';
     alert(htmlToAdd);
+    document.getElementById('results').innerHTML= htmlToAdd;
 }
 
 
