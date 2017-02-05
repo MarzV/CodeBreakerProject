@@ -15,12 +15,18 @@ function guess() {
     attempt.value++;
     if (getResults(input.value)) {
         setMessage('You Win! :)')
+        showAnswer(true);
+        showReplay();
     }
     if(getResults(input.value) == false && attempt.value >= 10) {
         setMessage('You Lose! :(')
+        showAnswer(false);
+        showReplay();
     }
 
     else  setMessage('Incorrect, try again.')
+
+
 }
 
 //implement new functions here
@@ -120,4 +126,9 @@ function showAnswer(winOrLose) {
         codeHtml.className += ' failure'
     }
 
+}
+
+function showReplay() {
+    document.getElementById('guessing-div').style.display = 'none';
+    document.getElementById('replay-div').style.display = 'block';
 }
